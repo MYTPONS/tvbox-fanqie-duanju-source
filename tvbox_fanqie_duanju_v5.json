@@ -1,0 +1,407 @@
+{
+  "sites": [
+    {
+      "key": "番茄短剧",
+      "name": "番茄短剧",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "请求头": "User-Agent$MOBILE_UA",
+        "编码": "UTF-8",
+        "首页": "http://fqgo.52dns.cc/catalog?book_id=1",
+        "分类url": "http://fqgo.52dns.cc/catalog?book_id=1",
+        "分类": "短剧",
+        "数组": "cell_data",
+        "标题": "title",
+        "图片": "cover",
+        "描述": "video_desc",
+        "链接": "series_id",
+        "搜索url": "http://fqgo.52dns.cc/search?q={wd}&page={pg}",
+        "搜索模式": "1",
+        "搜索数组": "cell_data",
+        "搜索标题": "title",
+        "搜索图片": "cover",
+        "搜索描述": "video_desc",
+        "搜索链接": "series_id",
+        "播放二次截取": "",
+        "播放数组": "series_data",
+        "播放列表": "title",
+        "播放标题": "title",
+        "播放链接": "url",
+        "线路二次截取": "",
+        "线路数组": "",
+        "线路标题": "",
+        "嗅探词": ".m3u8#.mp4#.flv#.ts",
+        "过滤词": "",
+        "播放请求头": "User-Agent$MOBILE_UA"
+      }
+    }
+  ],
+  "wallpaper": "https://picsum.photos/1280/720/?random=1",
+  "spider": "",
+  "lives": [],
+  "flags": ["youku", "qq", "iqiyi", "qiyi", "letv", "sohu", "letv", "mgtv", "bilibili", "wasu", "bilibili", "1905"],
+  "parses": [
+    {
+      "name": "解析聚合",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "Json并发",
+      "type": 2,
+      "url": "parallel"
+    },
+    {
+      "name": "Web并发",
+      "type": 3,
+      "url": "web"
+    }
+  ],
+  "rules": [
+    {
+      "name": "广告",
+      "hosts": [
+        "www.80yy3.com",
+        "www.80kyy.com",
+        "www.80kmm.com",
+        "www.80tvs.com",
+        "www.80zw.com",
+        "www.kan84.com",
+        "www.kankan84.com",
+        "www.84kan.com",
+        "www.kankanpe.com",
+        "www.kkp4.com",
+        "www.kkp5.com",
+        "www.33ku.cc",
+        "www.33ku.vip",
+        "www.33ku.com",
+        "www.33ku.tv",
+        "www.33ku.net",
+        "www.33ku.org",
+        "www.33ku.xyz",
+        "www.33ku.top",
+        "www.33ku.fun",
+        "www.33ku.club",
+        "www.33ku.store",
+        "www.33ku.app",
+        "www.33ku.io",
+        "www.33ku.me",
+        "www.33ku.co",
+        "www.33ku.cn",
+        "www.33ku.us",
+        "www.33ku.uk",
+        "www.33ku.jp",
+        "www.33ku.kr",
+        "www.33ku.hk",
+        "www.33ku.tw",
+        "www.33ku.sg",
+        "www.33ku.my",
+        "www.33ku.th",
+        "www.33ku.vn",
+        "www.33ku.ph",
+        "www.33ku.id",
+        "www.33ku.au",
+        "www.33ku.nz",
+        "www.33ku.ca",
+        "www.33ku.fr",
+        "www.33ku.de",
+        "www.33ku.it",
+        "www.33ku.es",
+        "www.33ku.pt",
+        "www.33ku.ru",
+        "www.33ku.br",
+        "www.33ku.mx",
+        "www.33ku.ar",
+        "www.33ku.cl",
+        "www.33ku.co",
+        "www.33ku.pe",
+        "www.33ku.uy",
+        "www.33ku.py",
+        "www.33ku.bo",
+        "www.33ku.ec",
+        "www.33ku.ve",
+        "www.33ku.gy",
+        "www.33ku.sr",
+        "www.33ku.gf",
+        "www.33ku.py",
+        "www.33ku.uy",
+        "www.33ku.bo",
+        "www.33ku.ec",
+        "www.33ku.ve",
+        "www.33ku.gy",
+        "www.33ku.sr",
+        "www.33ku.gf"
+      ]
+    }
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "enable-chromium",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "max-buffer-size",
+          "value": "5242880"
+        },
+        {
+          "category": 4,
+          "name": "buffer-size",
+          "value": "2097152"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-avc",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-sync",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "dns_cache_timeout",
+          "value": "600000"
+        }
+      ]
+    },
+    {
+      "group": "硬解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "enable-chromium",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "max-buffer-size",
+          "value": "5242880"
+        },
+        {
+          "category": 4,
+          "name": "buffer-size",
+          "value": "2097152"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-avc",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-sync",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "dns_cache_timeout",
+          "value": "600000"
+        }
+      ]
+    }
+  ],
+  "ads": [
+    "www.80yy3.com",
+    "www.80kyy.com",
+    "www.80kmm.com",
+    "www.80tvs.com",
+    "www.80zw.com",
+    "www.kan84.com",
+    "www.kankan84.com",
+    "www.84kan.com",
+    "www.kankanpe.com",
+    "www.kkp4.com",
+    "www.kkp5.com",
+    "www.33ku.cc",
+    "www.33ku.vip",
+    "www.33ku.com",
+    "www.33ku.tv",
+    "www.33ku.net",
+    "www.33ku.org",
+    "www.33ku.xyz",
+    "www.33ku.top",
+    "www.33ku.fun",
+    "www.33ku.club",
+    "www.33ku.store",
+    "www.33ku.app",
+    "www.33ku.io",
+    "www.33ku.me",
+    "www.33ku.co",
+    "www.33ku.cn",
+    "www.33ku.us",
+    "www.33ku.uk",
+    "www.33ku.jp",
+    "www.33ku.kr",
+    "www.33ku.hk",
+    "www.33ku.tw",
+    "www.33ku.sg",
+    "www.33ku.my",
+    "www.33ku.th",
+    "www.33ku.vn",
+    "www.33ku.ph",
+    "www.33ku.id",
+    "www.33ku.au",
+    "www.33ku.nz",
+    "www.33ku.ca",
+    "www.33ku.fr",
+    "www.33ku.de",
+    "www.33ku.it",
+    "www.33ku.es",
+    "www.33ku.pt",
+    "www.33ku.ru",
+    "www.33ku.br",
+    "www.33ku.mx",
+    "www.33ku.ar",
+    "www.33ku.cl",
+    "www.33ku.co",
+    "www.33ku.pe",
+    "www.33ku.uy",
+    "www.33ku.py",
+    "www.33ku.bo",
+    "www.33ku.ec",
+    "www.33ku.ve",
+    "www.33ku.gy",
+    "www.33ku.sr",
+    "www.33ku.gf"
+  ]
+}
