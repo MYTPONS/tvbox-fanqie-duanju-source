@@ -1,0 +1,354 @@
+{
+  "wallpaper": "https://picsum.photos/1280/720/?random=10",
+  "spider": "https://raw.githubusercontent.com/MYTPONS/tvbox-fanqie-duanju-source/main/js/番茄短剧.js",
+  "sites": [
+    {
+      "key": "番茄短剧",
+      "name": "番茄短剧[js]",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/MYTPONS/tvbox-fanqie-duanju-source/main/js/番茄短剧.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "sohu",
+          "搜狐",
+          "letv",
+          "乐视",
+          "1905",
+          "xigua",
+          "西瓜"
+        ]
+      }
+    }
+  ],
+  "parses": [
+    {
+      "name": "聚合1",
+      "type": 3,
+      "url": "Demo"
+    },
+    {
+      "name": "聚合2",
+      "type": 3,
+      "url": "Json"
+    },
+    {
+      "name": "解析1",
+      "type": 0,
+      "url": "https://jx.777jiexi.com/player/?url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "sohu",
+          "搜狐",
+          "letv",
+          "乐视",
+          "1905",
+          "xigua",
+          "西瓜"
+        ]
+      }
+    },
+    {
+      "name": "解析2",
+      "type": 0,
+      "url": "https://jx.jsonplayer.com/player/?url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "爱奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "sohu",
+          "搜狐",
+          "letv",
+          "乐视",
+          "1905",
+          "xigua",
+          "西瓜"
+        ]
+      }
+    }
+  ],
+  "flags": [
+    "youku",
+    "qq",
+    "iqiyi",
+    "qiyi",
+    "letv",
+    "sohu",
+    "letv",
+    "mgtv",
+    "bilibili",
+    "wasu",
+    "xigua",
+    "1905"
+  ],
+  "rules": [
+    {
+      "host": [
+        "www.6080.com",
+        "www.6080.tv"
+      ],
+      "rule": [
+        ".hl-player-wrap&&.hl-plays-list a;a&&Text;a&&data-vid;&&.hl-player-wrap&&.hl-play-url&&Text"
+      ]
+    },
+    {
+      "host": [
+        "www.zj883.com"
+      ],
+      "rule": [
+        ".stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href"
+      ]
+    },
+    {
+      "host": [
+        "www.ikan6.vip"
+      ],
+      "rule": [
+        ".stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href"
+      ]
+    },
+    {
+      "host": [
+        "www.88kanqiu.cc"
+      ],
+      "rule": [
+        ".stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href"
+      ]
+    },
+    {
+      "host": [
+        "www.buguoying.com"
+      ],
+      "rule": [
+        ".stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href"
+      ]
+    },
+    {
+      "host": [
+        "www.555dy.vip"
+      ],
+      "rule": [
+        ".stui-vodlist li;a&&title;a&&data-original;.pic-text&&Text;a&&href"
+      ]
+    }
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "max-buffer-size",
+          "value": "5242880"
+        },
+        {
+          "category": 4,
+          "name": "analyzeduration",
+          "value": "1000000"
+        },
+        {
+          "category": 4,
+          "name": "probesize",
+          "value": "1000000"
+        },
+        {
+          "category": 4,
+          "name": "buffer-queue-overflow-level",
+          "value": "95"
+        }
+      ]
+    },
+    {
+      "group": "硬解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "overlay-format",
+          "value": "842225234"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "soundtouch",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "start-on-prepared",
+          "value": "1"
+        },
+        {
+          "category": 1,
+          "name": "http-detect-range-support",
+          "value": "0"
+        },
+        {
+          "category": 1,
+          "name": "fflags",
+          "value": "fastseek"
+        },
+        {
+          "category": 2,
+          "name": "skip_loop_filter",
+          "value": "48"
+        },
+        {
+          "category": 4,
+          "name": "reconnect",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "max-buffer-size",
+          "value": "5242880"
+        },
+        {
+          "category": 4,
+          "name": "analyzeduration",
+          "value": "1000000"
+        },
+        {
+          "category": 4,
+          "name": "probesize",
+          "value": "1000000"
+        },
+        {
+          "category": 4,
+          "name": "buffer-queue-overflow-level",
+          "value": "95"
+        },
+        {
+          "category": 6,
+          "name": "mediacodec-select-resolution",
+          "value": "1"
+        },
+        {
+          "category": 6,
+          "name": "mediacodec",
+          "value": "1"
+        },
+        {
+          "category": 6,
+          "name": "mediacodec-auto-rotate",
+          "value": "1"
+        },
+        {
+          "category": 6,
+          "name": "mediacodec-handle-resolution-change",
+          "value": "1"
+        },
+        {
+          "category": 6,
+          "name": "mediacodec-avc",
+          "value": "1"
+        },
+        {
+          "category": 6,
+          "name": "mediacodec-hevc",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "ads": [
+    "https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_19361_1.svg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads1.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads2.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads3.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads4.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads5.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads6.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads7.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads8.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads9.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads10.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads11.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads12.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads13.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads14.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads15.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads16.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads17.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads18.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads19.jpg",
+    "https://cdn.jsdelivr.net/gh/Team-xiaojingyan/CDN@master/images/ads20.jpg"
+  ]
+}
